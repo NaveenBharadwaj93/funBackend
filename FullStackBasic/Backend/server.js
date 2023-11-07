@@ -37,8 +37,8 @@ app.get('/jokes',(req,res)=>{
     res.send(jokes)
 })
 
-const port1 = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
-app.listen(port1,()=>{
-    console.log(`serve at http://locallhost:${port1}`);
+app.listen(port,()=>{
+    console.log(`serve at http://locallhost:${port}`);
 })
